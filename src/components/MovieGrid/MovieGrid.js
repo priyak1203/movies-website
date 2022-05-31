@@ -64,7 +64,9 @@ const MovieGrid = () => {
       <div className="movie-grid">
         {loading ? (
           <h2>Loading....</h2>
-        ) : moviesList.length && searchValue.length > 0 ? (
+        ) : moviesList.length &&
+          searchValue.length > 0 &&
+          searchResult.length > 0 ? (
           searchResult.map((item) => {
             return (
               <MovieCard
@@ -75,6 +77,10 @@ const MovieGrid = () => {
               />
             );
           })
+        ) : moviesList.length &&
+          searchValue.length > 0 &&
+          searchResult.length === 0 ? (
+          <h2>No Match Found. Please Search again.</h2>
         ) : (
           moviesList.map((item) => {
             return (
