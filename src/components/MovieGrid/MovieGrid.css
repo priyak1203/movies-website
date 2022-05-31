@@ -1,0 +1,33 @@
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.search-wrapper {
+  color: var(--primary-color);
+  width: 350px;
+  margin: 10px auto;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+}
+
+.search-wrapper i {
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  right: 10px;
+}

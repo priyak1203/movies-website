@@ -1,0 +1,37 @@
+.movie-card {
+  margin: 15px 10px;
+  position: relative;
+  border: 1px solid transparent;
+  transform: scale(1);
+}
+
+.movie-card img {
+  width: 250px;
+  height: 350px;
+  box-shadow: 0px 0px 15px var(--primary-color);
+  border-radius: 5px;
+}
+
+.movie-title-wrapper {
+  background-color: rgba(47, 47, 47, 0.5);
+  width: 100%;
+  height: 80px;
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0px 0px 5px 5px;
+  position: absolute;
+  bottom: 5px;
+  padding: 8px 16px;
+  font-size: 20px;
+  display: flex;
+  align-items: centre;
+}
+
+.movie-title {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.active {
+  transition: all 3ms;
+  transform: scale(1.07);
+}
